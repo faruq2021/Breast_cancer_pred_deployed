@@ -21,16 +21,16 @@
       <div class="row">
         <div class="col-10">
           <form action="/predict"method="POST">
-         <input type="number" step="0.1" name="var_1" placeholder="var_1" required="required" />
-          <input type="number" step="0.1" name="var_2" placeholder="var_2" required="required" />
-            <input type="number" step="0.1" name="var_3" placeholder="var_3" required="required" />
-             <input type="number" step="0.1" name="var_4" placeholder="var_4" required="required"/>
-               <input type="number" step="0.1" name="var_5" placeholder="var_5" required="required"/>
-                 <input type="number" step="0.1" name="var_6" placeholder="var_6" required="required"/>
-                  <input type="number" step="0.1" name="var_7" placeholder="var_7" required="required"/>
-                    <input type="number" step="0.1" name="var_8" placeholder="var_8" required="required"/>
-                     <input type="number" step="0.1" name="var_9" placeholder="var_9" required="required"/>
-                         <input type="number" step="0.1" name="var_10" placeholder="var_10" required="required"/>
+         <input type="number" step="0.1" name="var_1" placeholder="radius_mean" required="required" />
+          <input type="number" step="0.1" name="var_2" placeholder="texture_mean" required="required" />
+            <input type="number" step="0.1" name="var_3" placeholder="perimeter_mean" required="required" />
+             <input type="number" step="0.1" name="var_4" placeholder="area_mean" required="required"/>
+               <input type="number" step="0.1" name="var_5" placeholder="smoothness_mean" required="required"/>
+                 <input type="number" step="0.1" name="var_6" placeholder="compactness_mean" required="required"/>
+                  <input type="number" step="0.1" name="var_7" placeholder="concavity_mean" required="required"/>
+                    <input type="number" step="0.1" name="var_8" placeholder="concave_points_mean" required="required"/>
+                     <input type="number" step="0.1" name="var_9" placeholder="symmetry_mean" required="required"/>
+                         <input type="number" step="0.1" name="var_10" placeholder="fractal_dimension_mean" required="required"/>
         </div>
      </div>
     
@@ -45,7 +45,8 @@
    {{ prediction_text }}
 
  </div>
-
+   <h1>Malignant Tumor=0</h1>
+   <h1>Benign Tumor=1</h1>
 
 </body>
 </html>
